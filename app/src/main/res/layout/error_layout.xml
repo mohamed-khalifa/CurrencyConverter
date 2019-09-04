@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+    <ImageView
+            android:id="@+id/ratesErrorImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/error_image"
+            app:srcCompat="@drawable/ic_no_rates" />
+
+    <TextView
+            android:id="@+id/ratesErrorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratesErrorImageView"
+            android:layout_centerInParent="true"
+            android:text="@string/no_rates" />
+
+</RelativeLayout>
