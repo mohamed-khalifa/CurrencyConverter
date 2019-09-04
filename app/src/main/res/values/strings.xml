@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="header_title">Rates</string>
+    <string name="currency_image_content_description">Currency image</string>
+    <string name="no_rates">Error loading rates</string>
+    <string name="error_image">Error Image</string>
+    <string name="amount_hint">0</string>
+
+</resources>
