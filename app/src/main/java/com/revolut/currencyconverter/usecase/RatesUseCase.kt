@@ -20,7 +20,7 @@ class RatesUseCase {
         val ratesRepository = RatesRepository()
         return ratesRepository.getRates(baseCurrency)
             .delay(1, TimeUnit.SECONDS)
-            .repeat()
+            .repeatUntil { UnitTestChecker.isTestMode() }
             .subscribeOn(Schedulers.io())
             .observeOn(Schedulers.computation())
             .map {
